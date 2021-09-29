@@ -2413,62 +2413,6 @@ Game.Launch=function()
 					])
 				);
 			}
-
-			if (list.length==0)
-			{
-				if (Game.cookiesEarned<5) list.push('You feel like making cookies. But nobody wants to eat your cookies.');
-				else if (Game.cookiesEarned<50) list.push('Your first batch goes to the trash. The neighborhood raccoon barely touches it.');
-				else if (Game.cookiesEarned<100) list.push('Your family accepts to try some of your cookies.');
-				else if (Game.cookiesEarned<500) list.push('Your cookies are popular in the neighborhood.');
-				else if (Game.cookiesEarned<1000) list.push('People are starting to talk about your cookies.');
-				else if (Game.cookiesEarned<3000) list.push('Your cookies are talked about for miles around.');
-				else if (Game.cookiesEarned<6000) list.push('Your cookies are renowned in the whole town!');
-				else if (Game.cookiesEarned<10000) list.push('Your cookies bring all the boys to the yard.');
-				else if (Game.cookiesEarned<20000) list.push('Your cookies now have their own website!');
-				else if (Game.cookiesEarned<30000) list.push('Your cookies are worth a lot of money.');
-				else if (Game.cookiesEarned<40000) list.push('Your cookies sell very well in distant countries.');
-				else if (Game.cookiesEarned<60000) list.push('People come from very far away to get a taste of your cookies.');
-				else if (Game.cookiesEarned<80000) list.push('Kings and queens from all over the world are enjoying your cookies.');
-				else if (Game.cookiesEarned<100000) list.push('There are now museums dedicated to your cookies.');
-				else if (Game.cookiesEarned<200000) list.push('A national day has been created in honor of your cookies.');
-				else if (Game.cookiesEarned<300000) list.push('Your cookies have been named a part of the world wonders.');
-				else if (Game.cookiesEarned<450000) list.push('History books now include a whole chapter about your cookies.');
-				else if (Game.cookiesEarned<600000) list.push('Your cookies have been placed under government surveillance.');
-				else if (Game.cookiesEarned<1000000) list.push('The whole planet is enjoying your cookies!');
-				else if (Game.cookiesEarned<5000000) list.push('Strange creatures from neighboring planets wish to try your cookies.');
-				else if (Game.cookiesEarned<10000000) list.push('Elder gods from the whole cosmos have awoken to taste your cookies.');
-				else if (Game.cookiesEarned<30000000) list.push('Beings from other dimensions lapse into existence just to get a taste of your cookies.');
-				else if (Game.cookiesEarned<100000000) list.push('Your cookies have achieved sentience.');
-				else if (Game.cookiesEarned<300000000) list.push('The universe has now turned into cookie dough, to the molecular level.');
-				else if (Game.cookiesEarned<1000000000) list.push('Your cookies are rewriting the fundamental laws of the universe.');
-				else if (Game.cookiesEarned<10000000000) list.push('A local news station runs a 10-minute segment about your cookies. Success!<br><span style="font-size:50%;">(you win a cookie)</span>');
-				else if (Game.cookiesEarned<10100000000) list.push('it\'s time to stop playing');//only show this for 100 millions (it's funny for a moment)
-			}
-
-			if (Game.elderWrath>0 && (Game.pledges==0 || Math.random()<0.5))
-			{
-				list=[];
-				if (Game.elderWrath==1) list.push(choose([
-					'News : millions of old ladies reported missing!',
-					'News : processions of old ladies sighted around cookie facilities!',
-					'News : families around the continent report agitated, transfixed grandmothers!',
-					'News : doctors swarmed by cases of old women with glassy eyes and a foamy mouth!',
-					'News : nurses report "strange scent of cookie dough" around female elderly patients!'
-				]));
-				if (Game.elderWrath==2) list.push(choose([
-					'News : town in disarray as strange old ladies break into homes to abduct infants and baking utensils!',
-					'News : sightings of old ladies with glowing eyes terrify local population!',
-					'News : retirement homes report "female residents slowly congealing in their seats"!',
-					'News : whole continent undergoing mass exodus of old ladies!',
-					'News : old women freeze in place in streets, ooze warm sugary syrup!'
-				]));
-				if (Game.elderWrath==3) list.push(choose([
-					'News : large "flesh highways" scar continent, stretch between various cookie facilities!',
-					'News : wrinkled "flesh tendrils" visible from space!',
-					'News : remains of "old ladies" found frozen in the middle of growing fleshy structures!',
-					'News : all hope lost as writhing mass of flesh and dough engulfs whole city!',
-					'News : nightmare continues as wrinkled acres of flesh expand at alarming speeds!'
-				]));
 			}
 
 			Game.TickerAge=Game.fps*10;
