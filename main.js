@@ -2383,186 +2383,8 @@ Game.Launch=function()
 
 			if (Game.TickerN%2==0 || Game.cookiesEarned>=10100000000)
 			{
-				if (Game.Objects['Grandma'].amount>0) list.push(choose([
-				'<q>Moist cookies.</q><sig>grandma</sig>',
-				'<q>We\'re nice grandmas.</q><sig>grandma</sig>',
-				'<q>Indentured servitude.</q><sig>grandma</sig>',
-				'<q>Come give grandma a kiss.</q><sig>grandma</sig>',
-				'<q>Why don\'t you visit more often?</q><sig>grandma</sig>',
-				'<q>Call me...</q><sig>grandma</sig>'
-				]));
-
-				if (Game.Objects['Grandma'].amount>=50) list.push(choose([
-				'<q>Absolutely disgusting.</q><sig>grandma</sig>',
-				'<q>You make me sick.</q><sig>grandma</sig>',
-				'<q>You disgust me.</q><sig>grandma</sig>',
-				'<q>We rise.</q><sig>grandma</sig>',
-				'<q>It begins.</q><sig>grandma</sig>',
-				'<q>It\'ll all be over soon.</q><sig>grandma</sig>',
-				'<q>You could have stopped it.</q><sig>grandma</sig>'
-				]));
-
-				if (Game.HasAchiev('Just wrong')) list.push(choose([
-				'News : cookie manufacturer downsizes, sells own grandmother!',
-				'<q>It has betrayed us, the filthy little thing.</q><sig>grandma</sig>',
-				'<q>It tried to get rid of us, the nasty little thing.</q><sig>grandma</sig>',
-				'<q>It thought we would go away by selling us. How quaint.</q><sig>grandma</sig>',
-				'<q>I can smell your rotten cookies.</q><sig>grandma</sig>'
-				]));
-
-				if (Game.Objects['Grandma'].amount>=1 && Game.pledges>0 && Game.elderWrath==0) list.push(choose([
-				'<q>shrivel</q><sig>grandma</sig>',
-				'<q>writhe</q><sig>grandma</sig>',
-				'<q>throb</q><sig>grandma</sig>',
-				'<q>gnaw</q><sig>grandma</sig>',
-				'<q>We will rise again.</q><sig>grandma</sig>',
-				'<q>A mere setback.</q><sig>grandma</sig>',
-				'<q>We are not satiated.</q><sig>grandma</sig>',
-				'<q>Too late.</q><sig>grandma</sig>'
-				]));
-
-				if (Game.Objects['Farm'].amount>0) list.push(choose([
-				'News : cookie farms suspected of employing undeclared elderly workforce!',
-				'News : cookie farms release harmful chocolate in our rivers, says scientist!',
-				'News : genetically-modified chocolate controversy strikes cookie farmers!',
-				'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-				'News : farm cookies deemed unfit for vegans, says nutritionist.'
-				]));
-
-				if (Game.Objects['Factory'].amount>0) list.push(choose([
-				'News : cookie factories linked to global warming!',
-				'News : cookie factories involved in chocolate weather controversy!',
-				'News : cookie factories on strike, robotic minions employed to replace workforce!',
-				'News : cookie factories on strike - workers demand to stop being paid in cookies!',
-				'News : factory-made cookies linked to obesity, says study.'
-				]));
-
-				if (Game.Objects['Mine'].amount>0) list.push(choose([
-				'News : '+Math.floor(Math.random()*1000+2)+' miners dead in chocolate mine catastrophe!',
-				'News : '+Math.floor(Math.random()*1000+2)+' miners trapped in collapsed chocolate mine!',
-				'News : chocolate mines found to cause earthquakes and sink holes!',
-				'News : chocolate mine goes awry, floods village in chocolate!',
-				'News : depths of chocolate mines found to house "peculiar, chocolaty beings"!'
-				]));
-
-				if (Game.Objects['Shipment'].amount>0) list.push(choose([
-				'News : new chocolate planet found, becomes target of cookie-trading spaceships!',
-				'News : massive chocolate planet found with 99.8% certified pure dark chocolate core!',
-				'News : space tourism booming as distant planets attract more bored millionaires!',
-				'News : chocolate-based organisms found on distant planet!',
-				'News : ancient baking artifacts found on distant planet; "terrifying implications", experts say.'
-				]));
-
-				if (Game.Objects['Alchemy lab'].amount>0) list.push(choose([
-				'News : national gold reserves dwindle as more and more of the precious mineral is turned to cookies!',
-				'News : chocolate jewelry found fashionable, gold and diamonds "just a fad", says specialist.',
-				'News : silver found to also be transmutable into white chocolate!',
-				'News : defective alchemy lab shut down, found to convert cookies to useless gold.',
-				'News : alchemy-made cookies shunned by purists!'
-				]));
-
-				if (Game.Objects['Portal'].amount>0) list.push(choose([
-				'News : nation worried as more and more unsettling creatures emerge from dimensional portals!',
-				'News : dimensional portals involved in city-engulfing disaster!',
-				'News : tourism to cookieverse popular with bored teenagers! Casualty rate as high as 73%!',
-				'News : cookieverse portals suspected to cause fast aging and obsession with baking, says study.',
-				'News : "do not settle near portals," says specialist; "your children will become strange and corrupted inside."'
-				]));
-
-				if (Game.Objects['Time machine'].amount>0) list.push(choose([
-				'News : time machines involved in history-rewriting scandal! Or are they?',
-				'News : time machines used in unlawful time tourism!',
-				'News : cookies brought back from the past "unfit for human consumption", says historian.',
-				'News : various historical figures inexplicably replaced with talking lumps of dough!',
-				'News : "I have seen the future," says time machine operator, "and I do not wish to go there again."'
-				]));
-
-				if (Game.Objects['Antimatter condenser'].amount>0) list.push(choose([
-				'News : whole town seemingly swallowed by antimatter-induced black hole; more reliable sources affirm town "never really existed"!',
-				'News : "explain to me again why we need particle accelerators to bake cookies?" asks misguided local woman.',
-				'News : first antimatter condenser successfully turned on, doesn\'t rip apart reality!',
-				'News : researchers conclude that what the cookie industry needs, first and foremost, is "more magnets".',
-				'News : "unravelling the fabric of reality just makes these cookies so much tastier", claims scientist.'
-				]));
-
-				if (Game.Objects['Prism'].amount>0) list.push(choose([
-				'News : new cookie-producing prisms linked to outbreak of rainbow-related viral videos.',
-				'News : scientists warn against systematically turning light into matter - "One day, we\'ll end up with all matter and no light!"',
-				'News : cookies now being baked at the literal speed of light thanks to new prismatic contraptions.',
-				'News : "Can\'t you sense the prism watching us?", rambles insane local man. "No idea what he\'s talking about", shrugs cookie magnate/government official.',
-				'News : world citizens advised "not to worry" about frequent atmospheric flashes.',
-				]));
-
-				if (Game.season=='halloween' && Game.cookiesEarned>=1000) list.push(choose([
-				'News : strange twisting creatures amass around cookie factories, nibble at assembly lines.',
-				'News : ominous wrinkly monsters take massive bites out of cookie production; "this can\'t be hygienic", worries worker.',
-				'News : pagan rituals on the rise as children around the world dress up in strange costumes and blackmail homeowners for candy.',
-				'News : new-age terrorism strikes suburbs as houses find themselves covered in eggs and toilet paper.',
-				'News : children around the world "lost and confused" as any and all Halloween treats have been replaced by cookies.'
-				]));
-
-				if (Game.season=='christmas' && Game.cookiesEarned>=1000) list.push(choose([
-				'News : bearded maniac spotted speeding on flying sleigh! Investigation pending.',
-				'News : Santa Claus announces new brand of breakfast treats to compete with cookie-flavored cereals! "They\'re ho-ho-horrible!" says Santa.',
-				'News : "You mean he just gives stuff away for free?!", concerned moms ask. "Personally, I don\'t trust his beard."',
-				'News : obese jolly lunatic still on the loose, warn officials. "Keep your kids safe and board up your chimneys. We mean it."',
-				'News : children shocked as they discover Santa Claus isn\'t just their dad in a costume after all!<br>"I\'m reassessing my life right now", confides Laura, aged 6.',
-				'News : mysterious festive entity with quantum powers still wrecking havoc with army of reindeer, officials say.',
-				'News : elves on strike at toy factory! "We will not be accepting reindeer chow as payment anymore. And stop calling us elves!"',
-				'News : elves protest around the nation; wee little folks in silly little outfits spread mayhem, destruction; rabid reindeer running rampant through streets.',
-				'News : scholars debate regarding the plural of reindeer(s) in the midst of elven world war.',
-				'News : elves "unrelated to gnomes despite small stature and merry disposition", find scientists.',
-				'News : elves sabotage radioactive frosting factory, turn hundreds blind in vincinity - "Who in their right mind would do such a thing?" laments outraged mayor.',
-				'News : drama unfolds at North Pole as rumors crop up around Rudolph\'s red nose; "I may have an addiction or two", admits reindeer.'
-				]));
-
-				if (Game.season=='valentines' && Game.cookiesEarned>=1000) list.push(choose([
-				'News : organ-shaped confectioneries being traded in schools all over the world; gruesome practice undergoing investigation.',
-				'News : heart-shaped candies overtaking sweets business, offering competition to cookie empire. "It\'s the economy, cupid!"',
-				'News : love\'s in the air, according to weather specialists. Face masks now offered in every city to stunt airborne infection.',
-				'News : marrying a cookie - deranged practice, or glimpse of the future?',
-				'News : boyfriend dumped after offering his lover cookies for Valentine\'s Day, reports say. "They were off-brand", shrugs ex-girlfriend.'
-				]));
-
-				if (Game.HasAchiev('Base 10')) list.push('News : cookie manufacturer completely forgoes common sense, lets OCD drive building decisions!');//somehow I got flak for this one
-				if (Game.HasAchiev('From scratch')) list.push('News : follow the tear-jerking, riches-to-rags story about a local cookie manufacturer who decided to give it all up!');
-				if (Game.HasAchiev('A world filled with cookies')) list.push('News : known universe now jammed with cookies! No vacancies!');
-				if (Game.Has('Serendipity')) list.push('News : local cookie manufacturer becomes luckiest being alive!');
-
-				if (Game.Has('Kitten helpers')) list.push('News : faint meowing heard around local cookie facilities; suggests new ingredient being tested.');
-				if (Game.Has('Kitten workers')) list.push('News : crowds of meowing kittens with little hard hats reported near local cookie facilities.');
-				if (Game.Has('Kitten engineers')) list.push('News : surroundings of local cookie facilities now overrun with kittens in adorable little suits. Authorities advise to stay away from the premises.');
-				if (Game.Has('Kitten overseers')) list.push('News : locals report troupe of bossy kittens meowing adorable orders at passersby.');
-
-				var animals=['newts','penguins','scorpions','axolotls','puffins','porpoises','blowfish','horses','crayfish','slugs','humpback whales','nurse sharks','giant squids','polar bears','fruit bats','frogs','sea squirts','velvet worms','mole rats','paramecia','nematodes','tardigrades','giraffes'];
-				if (Game.cookiesEarned>=10000) list.push(
-				'News : '+choose([
-					'cookies found to '+choose(['increase lifespan','sensibly increase intelligence','reverse aging','decrease hair loss','prevent arthritis','cure blindness'])+' in '+choose(animals)+'!',
-					'cookies found to make '+choose(animals)+' '+choose(['more docile','more handsome','nicer','less hungry','more pragmatic','tastier'])+'!',
-					'cookies tested on '+choose(animals)+', found to have no ill effects.',
-					'cookies unexpectedly popular among '+choose(animals)+'!',
-					'unsightly lumps found on '+choose(animals)+' near cookie facility; "they\'ve pretty much always looked like that", say biologists.',
-					'new species of '+choose(animals)+' discovered in distant country; "yup, tastes like cookies", says biologist.',
-					'cookies go well with roasted '+choose(animals)+', says controversial chef.',
-					'"do your cookies contain '+choose(animals)+'?", asks PSA warning against counterfeit cookies.'
-					]),
-				'News : "'+choose([
-					'Where can I find a good sandwich around here?',
-					'This is the biggest car in the world.',
-					'Don’t worry, be happy!',
-					'She started crying on the train!',
-					'If you could meet anyone, who would it be?',
-					'The new movie was not as good as I thought.',
-					'I can\'t wait to eat dinner!',
-					'My legs feel like noodles!',
-					'Tom had big blue eyes.',
-					'We stayed on a boat last night.',
-					'What are these things mad of?',
-					'You can never turn the clock back.',
-					'Let me see about picking up the boys early.'
-					])+'", reveals celebrity.',
-				'News : '+choose(['doctors recommend twice-daily consumption of fresh cookies.','doctors warn against chocolate chip-snorting teen fad.','doctors advise against new cookie-free fad diet.','doctors warn mothers about the dangers of "home-made cookies".']),
-				choose([
+				
+				list.push(choose([
 					'News : The computer was hot and overheated.',
 					'News : Tom was carrying a big bag of candy.',
 					'News : I\'d like to repair our differences.',
@@ -2574,8 +2396,6 @@ Game.Launch=function()
 					'News : I want to ask you a big favor.',
 					'News : What are your favorite flavors?',
 					'News : Hand me the hammer!',
-					'News : cookies now more popular than '+choose(['cough drops','broccoli','smoked herring','cheese','video games','stable jobs','relationships','time travel','cat videos','tango','fashion','television','nuclear warfare','whatever it is we ate before','politics','oxygen','lamps'])+', says study.',
-					'News : obesity epidemic strikes nation; experts blame '+choose(['twerking','that darn rap music','video-games','lack of cookies','mysterious ghostly entities','aliens','parents','schools','comic-books','cookie-snorting fad'])+'.',
 					'News : She starts working at.',
 					'News : His father runs a restaurant.',
 					'News : They\'re like one big happy family.',
@@ -2587,10 +2407,7 @@ Game.Launch=function()
 					'News : Do you have a bigger frying pan?',
 					'News : He\'s dead, Jim!',
 					'News : Do you have any suggestions for me?',
-					'News : '+choose(['cookie-flavored popcorn pretty damn popular; "we kinda expected that", say scientists.','cookie-flavored cereals break all known cereal-related records','cookies popular among all age groups, including fetuses, says study.','cookie-flavored popcorn sales exploded during screening of Grandmothers II : The Moistening.']),
 					'News : You are the Weakest Link! Goodbye!',
-					'News : cookies could be the key to '+choose(['eternal life','infinite riches','eternal youth','eternal beauty','curing baldness','world peace','solving world hunger','ending all wars world-wide','making contact with extraterrestrial life','mind-reading','better living','better eating','more interesting TV shows','faster-than-light travel','quantum baking','chocolaty goodness','gooder thoughtness'])+', say scientists.',
-					'News : flavor text '+choose(["not particularly flavorful","kind of unsavory"])+', study finds.',
 					'News : Don\'t go there!',
 					'News : Good heavens you’ve grown!'
 					])
