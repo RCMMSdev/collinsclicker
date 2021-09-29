@@ -2409,7 +2409,9 @@ Game.Launch=function()
 					'News : Do you have any suggestions for me?',
 					'News : You are the Weakest Link! Goodbye!',
 					'News : Don\'t go there!',
-					'News : Good heavens you’ve grown!'
+					'News : Good heavens you’ve grown!',
+					'News : Why does it keep saying undefined?'
+					'News : Never gonna give you up \n never gonna let you down \n never gonna turn around and \n desert you'
 					])
 				);
 			}
