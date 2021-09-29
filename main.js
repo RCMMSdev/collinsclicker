@@ -2413,7 +2413,6 @@ Game.Launch=function()
 					])
 				);
 			}
-			}
 
 			Game.TickerAge=Game.fps*10;
 			Game.Ticker=choose(list);
