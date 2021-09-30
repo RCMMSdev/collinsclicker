@@ -2422,19 +2422,19 @@ Game.Launch=function()
 				]));
 
 				if (Game.Objects['Farm'].amount>0) list.push(choose([
-				'News : cookie farms suspected of employing undeclared elderly workforce!',
-				'News : cookie farms release harmful chocolate in our rivers, says scientist!',
-				'News : genetically-modified chocolate controversy strikes cookie farmers!',
-				'News : free-range farm cookies popular with today\'s hip youth, says specialist.',
-				'News : farm cookies deemed unfit for vegans, says nutritionist.'
+				'News : What a big boy he is!',
+				'News : Here he comes to save the day!',
+				'News : I cant wait to eat dinner',
+				'News : There is one open baby swing.',
+				'News : What a big pumpkin!'
 				]));
 
 				if (Game.Objects['Factory'].amount>0) list.push(choose([
-				'News : cookie factories linked to global warming!',
-				'News : cookie factories involved in chocolate weather controversy!',
-				'News : cookie factories on strike, robotic minions employed to replace workforce!',
-				'News : cookie factories on strike - workers demand to stop being paid in cookies!',
-				'News : factory-made cookies linked to obesity, says study.'
+				'News : Can I help you?',
+				'News : Can I help you?',
+				'News : Youre so basic!',
+				'News : I hate being late more than anything.',
+				'News : Its no big deal.'
 				]));
 
 				if (Game.Objects['Mine'].amount>0) list.push(choose([
